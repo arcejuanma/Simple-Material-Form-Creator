@@ -4,7 +4,9 @@ A simple function to speed up the process of form creation using React, Material
 Functionality:
 - Supports Date, Text, Password, Multiline and Select Inputs
 
-Example:
+# Example:
+
+```javascript
 formCreator([{row: 2, placeHolder: 'ajdskahs', name: 'Ejemplo1', type: 'date', required: true}, 
                     {row: 1, placeHolder: 'asds', name:'Ejemplo2', type:'password', value:'hola'},
                     {row: 2, placeHolder: 'asds', name:'Ejemplo3', type:'password'},
@@ -14,10 +16,7 @@ formCreator([{row: 2, placeHolder: 'ajdskahs', name: 'Ejemplo1', type: 'date', r
                     {row: 2, placeHolder: 'ajdskahs', name: 'Ejemplo8', type: 'text'},
                     {row: 3, placeHolder: 'Hola', name: 'Ejemplo7', type: 'date'},
                     {row: 5, placeHolder: 'Hola', name: 'Ejemplo10', type: 'date'},
-                    {row: 5, placeHolder: 'Hola', name: 'Ejemplo9', type: 'date'}
-
-                  ], 
-                    {
+                    {row: 5, placeHolder: 'Hola', name: 'Ejemplo9', type: 'date'} ], {
                     name: 'Ejemplo', 
                     handler: handleChange2,
                     submit:{
@@ -40,6 +39,6 @@ formCreator([{row: 2, placeHolder: 'ajdskahs', name: 'Ejemplo1', type: 'date', r
                       rowHeadersVariant: 'h5',
                       '1':'Mi primer Row',
                       '3': 'Mi Tercer Row' 
-                      
-                    }
-                      })}
+                    }})
+           
+...
